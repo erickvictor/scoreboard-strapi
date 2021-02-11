@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "games",
+  "info": {
+    "name": "game",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "scores": {
+      "collection": "score",
+      "via": "game"
+    }
+  }
+}
